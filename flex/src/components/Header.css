@@ -6,26 +6,28 @@ body {
 
 .main-nav {
     background-color: #8E46C6;
-    padding: 22px 0;
+    padding: 30px 0; /* Increased padding for larger height */
 }
 
 .brand, .nav-link-custom {
     color: white !important;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added transition for background-color */
 }
 
 .brand {
     position: relative;
     padding-left: 20px;
-    font-weight: 600;
+    font-weight: 800; /* Made the logo bolder */
+    color: white; /* Ensured the logo is white */
 }
 
 .nav-list .nav-item .nav-link-custom {
-    margin-right: 20px;
+    margin-right: 7vw; /* Increased margin for more spacing using proportion */
     position: relative;
-    padding: 0 0.5rem;
-    transition: color 0.5s ease-in-out;
-    font-weight: 500;
+    padding: 10px 15px; /* Added padding for better spacing */
+    transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Added transition for background-color */
+    font-weight: 700; /* Made header elements bolder */
+    border-radius: 5px; /* Added border radius for smooth background transition */
 }
 
 .nav-list .nav-item .nav-link-custom::after {
@@ -36,15 +38,23 @@ body {
     background: white;
     position: absolute;
     bottom: 0;
-    left: 0;
-    transition: width 0.3s ease-in-out;
+    left: 50%;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 .nav-list .nav-item .nav-link-custom:hover {
-    color: lightpink !important;
+    color: #8E46C6 !important; /* Changed text color to purple on hover */
+    background-color: white; /* Added white background on hover */
     text-decoration: none;
 }
 
 .nav-list .nav-item .nav-link-custom:hover::after {
     width: 100%;
+    left: 0;
+}
+
+.nav-list .nav-item:hover .nav-link-custom {
+    background-color: white; /* Added white background on hover */
+    color: #8E46C6 !important; /* Changed text color to purple on hover */
+    text-decoration: none;
 }

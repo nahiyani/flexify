@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Navbar className="main-nav navbar navbar-expand-lg" expand="lg">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/">Flexify</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="brand">Flexify</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" />
         <Navbar.Collapse id="navbarNav">
           <Nav className="ms-auto nav-list">
