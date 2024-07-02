@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  h1, h2, h3, h4 {
+    color: #8E46C6;
+  }
+  
+  h1 {
+    margin-top: 40px;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .articles-section, .guides-section, .podcasts-section, .bmi-section {
+    background-color: #8E46C6;
+    color: #fff;
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+  
+  .articles-section h2, .guides-section h2, .podcasts-section h2, .bmi-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .btn-primary, .btn-secondary {
+    background-color: #8E46C6;
+    border-color: #8E46C6;
+  }
+  
+  .btn-primary:hover, .btn-secondary:hover {
+    background-color: #8E46C6;
+    border-color: #8E46C6;
+  }
+  
+  .bmi-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .bmi-result {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .bmi-category {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .bmi-category.underweight {
+    color: #007bff;
+  }
+  
+  .bmi-category.healthy-weight {
+    color: #28a745;
+  }
+  
+  .bmi-category.overweight {
+    color: #ffc107;
+  }
+  
+  .bmi-category.obesity {
+    color: #dc3545;
+  }
+  

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.instructors {
+    font-family: 'Poppins', sans-serif;
+}
+
+.instructors-header {
+    background: url('../images/instructors-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.instructors-header::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.instructors-header h1,
+.instructors-header p {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.instructors-header h1 {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.instructors-header p {
+    font-size: 20px;
+    margin: 50px 0 40px;
+}
+
+.instructors-section {
+    padding: 40px 0;
+}
+
+.instructor-card {
+    background-color: #8E46C6 !important; 
+    text-align: center;
+    border: 2px solid #8E46C6;
+    border-radius: 15px;
+    padding-top: 15px; /* Add space at the top of the card */
+}
+
+.instructor-picture {
+    background-color: rgb(228, 228, 228);
+    width: 90%;
+    height: 200px;
+    margin: 0 auto 10px; /* Reduce space below the image placeholder */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructor-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0; /* Adjust padding to gather text closer */
+}
+
+.instructor-card .card-title,
+.instructor-card .card-subtitle {
+    color: white; /* Ensure text is white */
+    margin: 0; /* Remove margin to gather text closer */
+}
+
+.instructor-card .card-title {
+    font-size: 20px;
+    margin-top: 5px; /* Reduce space between the image placeholder and the name */
+}
+
+.instructor-card .card-subtitle {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.pagination {
+    margin-top: 60px; /* Increase space between the pagination div and the instructors heading div */
+}
+
+.pagination .page-link {
+    color: #8E46C6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8E46C6;
+    border-color: #8E46C6;
+}
+
+.pagination .page-item .page-link {
+    border: 1px solid #8E46C6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8E46C6;
+    border-color: #8E46C6;
+    color: white;
+}
+
+.pagination .page-link:hover {
+    background-color: #d7b0f4;
+    border-color: #8E46C6;
+}

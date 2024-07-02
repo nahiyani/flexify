@@ -22,12 +22,11 @@ body {
 }
 
 .nav-list .nav-item .nav-link-custom {
-    margin-right: 7vw; /* Increased margin for more spacing using proportion */
-    position: relative;
-    padding: 10px 15px; /* Added padding for better spacing */
-    transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Added transition for background-color */
-    font-weight: 700; /* Made header elements bolder */
-    border-radius: 5px; /* Added border radius for smooth background transition */
+    padding: 10px 15px; /* Adjusted padding for better spacing */
+    transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Transition properties */
+    font-weight: 700; /* Font weight adjustment */
+    border-radius: 5px; /* Added border radius */
+    position: relative; /* Ensure relative positioning for pseudo-element */
 }
 
 .nav-list .nav-item .nav-link-custom::after {
