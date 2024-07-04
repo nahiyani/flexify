@@ -1,0 +1,164 @@
+.about-container {
+    text-align: center; 
+}
+
+.meet-the-executives {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flexify-advantage{
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.our-story-title {
+    color: white;
+}
+
+/* Accordion styles */
+.accordion {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: 1px solid #8E46C6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #8E46C6;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+    border-bottom: 1px solid #8E46C6;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 1.8rem; 
+    font-weight: bold; 
+}
+
+.accordion-body {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #8E46C6;
+    color: #8E46C6;
+}
+
+.accordion-header::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7px 0 7px;
+    border-color: white transparent transparent transparent;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion-item.active .accordion-header::after {
+    border-width: 0 7px 10px 7px;
+    border-color: transparent transparent white transparent;
+}
+
+/* Styling for OUR STORY section */
+.our-story {
+    background-color: #8E46C6;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 70%;
+    text-align: center; /* Center text content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    font-size: 20px;
+}
+
+.our-story-container {
+    width: 80%; /* Adjusted width for full width of the parent */
+    max-width: 800px; /* Set a maximum width for content */
+}
+
+
+/* Executives section styles */
+.executives {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -10px; /* Adjust spacing between cards */
+    margin-right: -10px; /* Adjust spacing between cards */
+}
+
+.executive-card {
+    width: 30%; /* Adjusted width */
+    border: 2px solid #8E46C6;
+    border-radius: 15px; /* Increased border radius */
+    padding: 20px; /* Increased padding */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.executive-card h3 {
+    font-weight: bold; /* Bolden names */
+    font-size: 2rem; /* Larger font size */
+}
+
+.executive-card h4 {
+    color: #8E46C6; /* Purple color */
+}
+
+.executive-card p {
+    font-size: 1.2rem; /* Increased font size */
+}
+
+.executive-photo {
+    width: 225px; /* Increased width */
+    height: 225px; /* Increased height */
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+/* Additional styling for About Us section */
+.about-section {
+    background-color: #8E46C6;
+    color: white;
+    width: 75%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto 40px;
+    text-align: center; /* Center align text */
+}
+
+.about-section h2 {
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Increased font size */
+    color: white; /* White text */
+}

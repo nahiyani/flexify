@@ -77,8 +77,10 @@ const Footer = () => {
                   onChange={(e) => setEmail(e.target.value)} 
                 />
               </Form.Group>
-              <Button variant="primary" type="submit" className="footer-button">SEND</Button>
             </Form>
+          </Col>
+          <Col>
+            <Button variant="primary" type="submit" className="footer-button">SEND</Button>
           </Col>
         </Row>
         <Row>

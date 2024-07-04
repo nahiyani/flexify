@@ -6,7 +6,7 @@ body {
 }
 
 .reserve-container {
-    max-width: 40%;
+    max-width: 50%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -15,12 +15,17 @@ body {
     text-align: center;
 }
 
+.headline {
+    font-size: 75px;
+    font-weight: bold;
+}
+
 .description {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Ensure space below the first input text */
 }
 
 .reserve-form {
-    border: 5px solid #8E46C6;
+    border: 3px solid #8E46C6;
     padding: 50px;
     border-radius: 15px;
     margin-bottom: 40px;
@@ -29,6 +34,7 @@ body {
 
 .form-title {
     font-weight: bold;
+    margin-bottom: 10px; /* Add spacing below the label */
 }
 
 .confirm-button {
@@ -45,7 +51,7 @@ body {
 .confirm-button:hover {
     background-color: white; /* Darker shade of purple on hover */
     border: 1px solid #8E46C6;
-    color: #8E46C6; /* Ensure text remains white on hover */
+    color: #8E46C6; /* Ensure text remains purple on hover */
 }
 
 .form-group-spacing {
@@ -56,4 +62,46 @@ body {
     display: flex;
     justify-content: center; /* Center the button within the form */
     align-items: center;
+}
+
+.purple-datepicker {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.purple-datepicker-calendar {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.purple-datepicker .selected {
+    background-color: #8E46C6;
+    color: white;
+}
+
+/* Ensure the Date and Time input fields are formatted like other fields */
+.date-picker-container {
+    margin-bottom: 30px; /* Add spacing underneath each field */
+}
+
+.date-picker-container .form-title {
+    display: block;
+    margin-bottom: 10px; /* Add spacing below the label */
+}
+
+.date-picker-container .form-control {
+    width: 100%;
+}
+
+.time-picker-container {
+    margin-bottom: 30px; /* Add spacing underneath each field */
+}
+
+.time-picker-container .form-title {
+    display: block;
+    margin-bottom: 10px; /* Add spacing below the label */
+}
+
+.time-picker-container .form-control {
+    width: 100%;
 }

@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs'; 
 import Classes from './pages/Classes';
 import Instructors from './pages/Instructors';
 import Library from './pages/Library';
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/about' element={<AboutUs />} /> 
           <Route path='/classes' element={<Classes />} />
           <Route path='/instructors' element={<Instructors />} />
           <Route path='/library' element={<Library />} />

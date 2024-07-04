@@ -6,19 +6,19 @@ body {
 
 .main-nav {
     background-color: #8E46C6;
-    padding: 30px 0; /* Increased padding for larger height */
+    padding: 30px 0; 
 }
 
 .brand, .nav-link-custom {
     color: white !important;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added transition for background-color */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; 
 }
 
 .brand {
     position: relative;
     padding-left: 20px;
     font-weight: 800; /* Made the logo bolder */
-    color: white; /* Ensured the logo is white */
+    color: white; 
 }
 
 .nav-list .nav-item .nav-link-custom {
