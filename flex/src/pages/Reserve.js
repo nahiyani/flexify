@@ -17,7 +17,6 @@ const Reserve = () => {
     if (form.checkValidity() === false) {
       event.stopPropagation();
     }
-    // Handle form submission
   };
 
   return (

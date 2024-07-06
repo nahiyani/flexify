@@ -6,7 +6,7 @@ body {
 
 .main-nav {
     background-color: #8E46C6;
-    padding: 30px 0; 
+    padding: 20px 0; 
 }
 
 .brand, .nav-link-custom {
@@ -21,12 +21,18 @@ body {
     color: white; 
 }
 
+.nav-list {
+    display: flex; /* Use flexbox for spacing items apart */
+    gap: 20px; /* Adjust gap between items */
+}
+
 .nav-list .nav-item .nav-link-custom {
     padding: 10px 15px; /* Adjusted padding for better spacing */
     transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Transition properties */
     font-weight: 700; /* Font weight adjustment */
     border-radius: 5px; /* Added border radius */
     position: relative; /* Ensure relative positioning for pseudo-element */
+    text-align: center; /* Center the text */
 }
 
 .nav-list .nav-item .nav-link-custom::after {
@@ -36,7 +42,7 @@ body {
     height: 2px;
     background: white;
     position: absolute;
-    bottom: 0;
+    bottom: -5px; /* Adjust the underline position */
     left: 50%;
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Modal } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Modal, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faFacebookF, faYoutube, faTiktok, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
@@ -7,13 +8,29 @@ import './Footer.css';
 const Footer = () => {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(true);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false);
+    setEmail('');
+    setIsValidEmail(true);
+  };
+
   const handleShow = () => setShow(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleShow();
+    if (validateEmail(email)) {
+      handleShow();
+      setIsValidEmail(true);
+    } else {
+      setIsValidEmail(false);
+    }
+  };
+
+  const validateEmail = (email) => {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
   };
 
   return (
@@ -40,32 +57,34 @@ const Footer = () => {
             <Row>
               <Col>
                 <ul className="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Classes</a></li>
-                  <li><a href="#">Instructors</a></li>
-                  <li><a href="#">Testimonials</a></li>
+                  <li><Nav.Link as={Link} to="/" className="nav-link-custom">Home</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/about" className="nav-link-custom">About Us</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/classes" className="nav-link-custom">Classes</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/instructors" className="nav-link-custom">Instructors</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/" className="nav-link-custom">Testimonials</Nav.Link></li>
                 </ul>
               </Col>
               <Col>
                 <ul className="list-unstyled">
-                  <li><a href="#">Library</a></li>
-                  <li><a href="#">Reserve</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
+                  <li><Nav.Link as={Link} to="/library" className="nav-link-custom">Library</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/reserve" className="nav-link-custom">Reserve</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/" className="nav-link-custom">Careers</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/" className="nav-link-custom">Privacy Policy</Nav.Link></li>
+                  <li><Nav.Link as={Link} to="/" className="nav-link-custom">Terms of Service</Nav.Link></li>
                 </ul>
               </Col>
             </Row>
           </Col>
           <Col md={3} className="footer-section">
             <h5>Questions?</h5>
-            <p>Email: info@tutorease.com<br />
+            <p>
+              Email: info@tutorease.com<br />
               Phone: 613-440-5350<br />
-              Hours: 8AM - 10PM, 7 days a week</p>
+              Hours: 8AM - 10PM, 7 days a week
+            </p>
           </Col>
         </Row>
-        <Row className="subscribe-section">
+        <Row className="subscribe-section justify-content-center">
           <Col md={12} className="text-center footer-section">
             <h2 className="subscribe-title">Subscribe to our monthly newsletter!</h2>
             <Form className="subscribe-form" onSubmit={handleSubmit}>
@@ -74,13 +93,19 @@ const Footer = () => {
                   type="email" 
                   placeholder="Email" 
                   value={email} 
-                  onChange={(e) => setEmail(e.target.value)} 
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    setIsValidEmail(true);
+                  }} 
+                  isInvalid={!isValidEmail}
+                  style={{ width: '100%' }}
                 />
+                <Form.Control.Feedback type="invalid">
+                  Please enter a valid email.
+                </Form.Control.Feedback>
               </Form.Group>
+              <Button variant="primary" type="submit" className="footer-button">SEND</Button>
             </Form>
-          </Col>
-          <Col>
-            <Button variant="primary" type="submit" className="footer-button">SEND</Button>
           </Col>
         </Row>
         <Row>

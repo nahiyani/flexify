@@ -105,3 +105,22 @@ body {
 .time-picker-container .form-control {
     width: 100%;
 }
+
+/* Expiry date and CVV input fields adjustments */
+.expiry-cvv-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry-cvv-container .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.expiry-cvv-container .form-group:last-child {
+    margin-right: 0;
+}
+
+.expiry-cvv-container .form-control {
+    width: 100%;
+}

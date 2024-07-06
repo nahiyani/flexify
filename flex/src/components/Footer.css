@@ -65,9 +65,10 @@
 .footer .form-control {
   margin-bottom: 10px;
   border-radius: 20px;
-  padding: 8px; /* Adjusted padding */
-  font-size: 14px; /* Reduced font size */
-  width: calc(100% - 100px); /* Adjusted width */
+  padding: 8px;
+  font-size: 14px;
+  width: 100%; /* Adjusted width */
+  padding-left: 15px; /* Added left padding */
 }
 
 .footer-button {
@@ -78,6 +79,7 @@
   padding: 10px 20px;
   font-weight: 700;
   margin-left: 10px; /* Added margin */
+  height: calc(100% - 20px); /* Adjusted height */
 }
 
 .footer-button:hover {
@@ -91,11 +93,16 @@
 
 .subscribe-section {
   margin-top: 30px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-} 
+}
 
-.email-input-group{
-  width: 50%;
+.email-input-group {
+  width: 50%; /* Set to 50% width */
+  display: inline-block; /* Ensure it's inline */
+  margin-right: 10px; /* Added margin between input and button */
+  vertical-align: top; /* Align elements at the top */
+  height: 60px;
+}
+
+.email-input-group .form-control {
+  height: calc(100% - 16px); /* Adjusted height to match button */
 }
