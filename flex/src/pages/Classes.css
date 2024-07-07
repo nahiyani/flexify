@@ -1,0 +1,156 @@
+.app {
+    padding: 20px;
+    background-color: white;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1rem;
+    color: black;
+    max-width: 800px; /* Made the description wider */
+    margin: 0 auto;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.facets {
+    width: 20%; /* Reduced the width */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid purple;
+}
+
+.results {
+    width: 75%;
+}
+
+.results-count {
+    text-align: center;
+    margin: 20px 0;
+    color: purple; /* Made the text purple */
+}
+
+.class-card {
+    margin-bottom: 20px;
+    border: 2px solid purple;
+}
+
+.class-card .class-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.class-card .image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.class-card .class-details {
+    flex: 1;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.purple-button {
+    background-color: purple;
+    border-color: purple;
+    color: white;
+}
+
+.purple-button:hover {
+    background-color: darkviolet;
+    border-color: darkviolet;
+    color: white;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bi-search {
+    font-size: 1.2rem;
+}
+
+.facets .form-label {
+    font-weight: bold;
+    color: purple; /* Made the text purple */
+}
+
+.facets .form-check {
+    margin-bottom: 10px;
+}
+
+.facets .dropdown {
+    width: 100%;
+    margin-bottom: 20px; /* Added spacing underneath the dropdown menu */
+}
+
+.facets .dropdown-menu {
+    width: 100%;
+}
+
+.facet-header {
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%; /* Make the background purple for the entire width */
+}
+
+.purple-border {
+    border: 2px solid purple;
+}
+
+.purple-checkbox .form-check-input:checked {
+    background-color: purple;
+    border-color: purple;
+}
+
+.instructor-selector {
+    background-color: white;
+    color: purple;
+    border-color: purple;
+}
+
+.padding {
+    height: 20px;
+}
+
+.search-bar-top {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-top .search-icon {
+    margin-right: 10px;
+}
+
+.bottom-results-count {
+    color: purple;
+}
+
+body {
+    margin: 0; /* Removed the padding/border/margin around the edge of the website */
+}
