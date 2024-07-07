@@ -4,11 +4,23 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 
+// Assuming your logo image is in the src/assets directory
+import logoImage from '../images/flexifylogo.png'; // Replace with your actual image path
+
 const Header = () => {
   return (
     <Navbar className="main-nav navbar navbar-expand-lg" expand="lg">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/" className="brand">Flexify</Navbar.Brand>
+        {/* Replace text with an image */}
+        <Navbar.Brand as={Link} to="/" className="brand">
+          <img
+            src={logoImage} // Path to your logo image
+            width="auto"
+            height="30"
+            className="d-inline-block align-top logo-image"
+            alt="Flexify Logo" // Alt text for accessibility
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" />
         <Navbar.Collapse id="navbarNav">
           <Nav className="ms-auto nav-list">

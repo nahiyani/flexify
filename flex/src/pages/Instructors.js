@@ -22,22 +22,22 @@ import willSmith from '../images/willsmith.png';
 import zaraLarsson from '../images/zaralarsson.jpg';
 
 const instructorData = [
-  { name: 'Dwayne Johnson', specialty1: 'Specialty 1A', specialty2: 'Specialty 1B', image: dwayneJohnson },
-  { name: 'Arnold Schwarzenegger', specialty1: 'Specialty 2A', specialty2: 'Specialty 2B', image: arnold },
-  { name: 'Will Smith', specialty1: 'Specialty 3A', specialty2: 'Specialty 3B', image: willSmith },
-  { name: 'Sofia Vergara', specialty1: 'Specialty 4A', specialty2: 'Specialty 4B', image: sofiaVergara },
-  { name: 'Timothee Chalamet', specialty1: 'Specialty 5A', specialty2: 'Specialty 5B', image: timotheeChalamet },
-  { name: 'Jennifer Lawrence', specialty1: 'Specialty 6A', specialty2: 'Specialty 6B', image: jenniferLawrence },
-  { name: 'Jennifer Lopez', specialty1: 'Specialty 7A', specialty2: 'Specialty 7B', image: jenniferLopez },
-  { name: 'Eric Winter', specialty1: 'Specialty 8A', specialty2: 'Specialty 8B', image: ericWinter },
-  { name: 'Scarlett Johansson', specialty1: 'Specialty 9A', specialty2: 'Specialty 9B', image: scarlettJohansson },
-  { name: 'Tom Holland', specialty1: 'Specialty 10A', specialty2: 'Specialty 10B', image: tomHolland },
-  { name: 'Ana de Armas', specialty1: 'Specialty 11A', specialty2: 'Specialty 11B', image: anaDeArmas },
-  { name: 'Zara Larsson', specialty1: 'Specialty 12A', specialty2: 'Specialty 12B', image: zaraLarsson },
-  { name: 'Aubrey Graham', specialty1: 'Specialty 13A', specialty2: 'Specialty 13B', image: aubreyGraham },
-  { name: 'Hugh Jackman', specialty1: 'Specialty 14A', specialty2: 'Specialty 14B', image: hughJackman },
-  { name: 'Emma Watson', specialty1: 'Specialty 15A', specialty2: 'Specialty 15B', image: emmaWatson },
-  { name: 'Megan Fox', specialty1: 'Specialty 16A', specialty2: 'Specialty 16B', image: meganFox }
+  { name: 'Ana de Armas', specialty1: 'Pilates', specialty2: 'Yoga', image: anaDeArmas },
+  { name: 'Arnold Schwarzenegger', specialty1: 'Strength Training', specialty2: 'Cardio', image: arnold },
+  { name: 'Aubrey Graham', specialty1: 'Cardio', specialty2: 'HIIT', image: aubreyGraham },
+  { name: 'Dwayne Johnson', specialty1: 'Strength Training', specialty2: 'HIIT', image: dwayneJohnson },
+  { name: 'Emma Watson', specialty1: 'Yoga', specialty2: 'Pilates', image: emmaWatson },
+  { name: 'Eric Winter', specialty1: 'HIIT', specialty2: 'Strength Training', image: ericWinter },
+  { name: 'Hugh Jackman', specialty1: 'Strength Training', specialty2: 'Cardio', image: hughJackman },
+  { name: 'Jennifer Lawrence', specialty1: 'Cardio', specialty2: 'HIIT', image: jenniferLawrence },
+  { name: 'Jennifer Lopez', specialty1: 'Cardio', specialty2: 'Yoga', image: jenniferLopez },
+  { name: 'Megan Fox', specialty1: 'Cardio', specialty2: 'Strength Training', image: meganFox },
+  { name: 'Scarlett Johansson', specialty1: 'Strength Training', specialty2: 'Yoga', image: scarlettJohansson },
+  { name: 'Sofia Vergara', specialty1: 'Yoga', specialty2: 'Pilates', image: sofiaVergara },
+  { name: 'Timothee Chalamet', specialty1: 'Yoga', specialty2: 'Pilates', image: timotheeChalamet },
+  { name: 'Tom Holland', specialty1: 'Cardio', specialty2: 'Strength Training', image: tomHolland },
+  { name: 'Will Smith', specialty1: 'HIIT', specialty2: 'Strength Training', image: willSmith },
+  { name: 'Zara Larsson', specialty1: 'Yoga', specialty2: 'Cardio', image: zaraLarsson },
 ];
 
 const ITEMS_PER_PAGE = 4;

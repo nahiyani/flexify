@@ -1,14 +1,12 @@
-.app {
-    padding: 20px;
-    background-color: white;
-}
-
+/* Header styles */
 .header {
     margin-bottom: 40px;
+    padding-top: 40px; /* Add padding on top */
+    text-align: center; /* Center header text */
 }
 
 .header h1 {
-    font-size: 70px;
+    font-size: 75px; /* Change font size */
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -16,38 +14,107 @@
 .header p {
     font-size: 1rem;
     color: black;
-    max-width: 800px; /* Made the description wider */
+    max-width: 800px; /* Make the description wider */
     margin: 0 auto;
+}
+
+/* Search container styles */
+.purple-border {
+    border: 2px solid #8E46C6; /* Purple border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.purple-border .form-control {
+    border: none; /* Remove default border from the input field */
+    box-shadow: none; /* Remove default box shadow from the input field */
+}
+
+.purple-border .form-control:focus {
+    box-shadow: none; /* Remove focus box shadow from the input field */
+}
+
+/* Search container and facets */
+.search{
+    display: flex;
+    width: 95%;
+    margin: 0 auto; 
+    margin-bottom: 20px;
 }
 
 .search-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 95%; /* Make search bar the size of the cards */
+    margin: 0 auto; /* Center the search bar and add bottom margin */
 }
 
 .facets {
-    width: 20%; /* Reduced the width */
+    width: 20%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid purple;
+    border: 2px solid #8E46C6; /* Use hex code #8E46C6 */
+    margin-right: 20px; /* Add padding on the left of the faceted search filters */
+}
+
+.facet-header {
+    background-color: #8E46C6; /* Use hex code #8E46C6 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.facets .form-check {
+    margin-bottom: 10px;
+}
+
+.facets .dropdown,
+.facets .dropdown-menu {
+    width: 100%;
+}
+
+.purple-button {
+    background-color: #8E46C6; /* Purple background */
+    color: white; /* White text */
+    width: 75%; /* 75% width of parent */
+    margin-top: 15px; /* Add space between facets */
+    margin: auto; /* Center horizontally */
+    display: block; /* Ensures block-level display */
+    border: none; /* Remove default border */
+    text-align: center; /* Center text horizontally */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.purple-button:hover {
+    background-color: white; /* White background on hover */
+    color: #8E46C6; /* Purple text on hover */
+    border: 2px solid #8E46C6; /* Purple border on hover */
 }
 
 .results {
-    width: 75%;
+    width: 80%;
+    margin-left: 20px; /* Add padding on the right of the class cards */
+  
 }
 
 .results-count {
-    text-align: center;
-    margin: 20px 0;
-    color: purple; /* Made the text purple */
+    color: #8E46C6; /* Make text purple */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center the results and pagination */
+    margin: auto; /* Center horizontally */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    border: none; /* Remove default border */
 }
 
 .class-card {
     margin-bottom: 20px;
-    border: 2px solid purple;
+    border: 2px solid #8E46C6; /* Use hex code #8E46C6 */
+    border-radius: 15px;
 }
 
 .class-card .class-card-content {
@@ -55,102 +122,54 @@
     align-items: center;
 }
 
-.class-card .image-placeholder {
-    width: 150px;
-    height: 150px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
 .class-card .class-details {
     flex: 1;
 }
 
+/* Button container and pagination */
 .button-container {
     text-align: center;
 }
 
-.purple-button {
-    background-color: purple;
-    border-color: purple;
-    color: white;
-}
-
-.purple-button:hover {
-    background-color: darkviolet;
-    border-color: darkviolet;
-    color: white;
-}
-
 .pagination {
+    display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 30px; /* Adjust bottom margin if needed */
 }
 
+.pagination .page-link {
+    color: #8E46C6; /* Use hex code #8E46C6 */
+    border-color: #8E46C6; /* Use hex code #8E46C6 */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8E46C6; /* Use hex code #8E46C6 */
+    border-color: #8E46C6; /* Use hex code #8E46C6 */
+}
+
+/* Additional styles */
 .bi-search {
     font-size: 1.2rem;
 }
 
-.facets .form-label {
+.form-label {
     font-weight: bold;
-    color: purple; /* Made the text purple */
-}
-
-.facets .form-check {
-    margin-bottom: 10px;
-}
-
-.facets .dropdown {
-    width: 100%;
-    margin-bottom: 20px; /* Added spacing underneath the dropdown menu */
-}
-
-.facets .dropdown-menu {
-    width: 100%;
-}
-
-.facet-header {
-    background-color: purple;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width: 100%; /* Make the background purple for the entire width */
-}
-
-.purple-border {
-    border: 2px solid purple;
 }
 
 .purple-checkbox .form-check-input:checked {
-    background-color: purple;
-    border-color: purple;
+    background-color: #8E46C6; /* Use hex code #8E46C6 */
+    border-color: #8E46C6; /* Use hex code #8E46C6 */
+}
+
+/* Checkbox description text */
+.facets .form-check-label {
+    color: #8E46C6; /* Make text purple */
 }
 
 .instructor-selector {
     background-color: white;
-    color: purple;
-    border-color: purple;
-}
-
-.padding {
-    height: 20px;
-}
-
-.search-bar-top {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar-top .search-icon {
-    margin-right: 10px;
-}
-
-.bottom-results-count {
-    color: purple;
-}
-
-body {
-    margin: 0; /* Removed the padding/border/margin around the edge of the website */
+    color: #8E46C6; /* Use hex code #8E46C6 */
+    border-color: #8E46C6; /* Use hex code #8E46C6 */
+    margin-bottom: 10px;
 }
