@@ -67,8 +67,8 @@
   border-radius: 20px;
   padding: 8px;
   font-size: 14px;
-  width: 100%; /* Adjusted width */
-  padding-left: 15px; /* Added left padding */
+  width: 100%;
+  padding-left: 15px; 
 }
 
 .footer-button {
@@ -78,8 +78,8 @@
   border-radius: 20px;
   padding: 10px 20px;
   font-weight: 700;
-  margin-left: 10px; /* Added margin */
-  height: calc(100% - 20px); /* Adjusted height */
+  margin-left: 10px; 
+  height: calc(100% - 20px); 
 }
 
 .footer-button:hover {
@@ -96,13 +96,13 @@
 }
 
 .email-input-group {
-  width: 50%; /* Set to 50% width */
-  display: inline-block; /* Ensure it's inline */
-  margin-right: 10px; /* Added margin between input and button */
-  vertical-align: top; /* Align elements at the top */
+  width: 50%; 
+  display: inline-block; 
+  margin-right: 10px; 
+  vertical-align: top; 
   height: 60px;
 }
 
 .email-input-group .form-control {
-  height: calc(100% - 16px); /* Adjusted height to match button */
+  height: calc(100% - 16px); 
 }

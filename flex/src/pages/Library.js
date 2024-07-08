@@ -20,7 +20,7 @@ const Library = () => {
       setBmiColor('#ADD8E6');
     } else if (bmi >= 18.5 && bmi < 25) {
       setBmiResult('Healthy Weight');
-      setBmiColor('#22DD22'); // Dark green color
+      setBmiColor('#22DD22'); 
     } else if (bmi >= 25 && bmi < 30) {
       setBmiResult('Overweight');
       setBmiColor('#FFD700');

@@ -22,22 +22,22 @@ body {
 .brand {
     position: relative;
     padding-left: 20px;
-    font-weight: 800; /* Made the logo bolder */
+    font-weight: 800; 
     color: white; 
 }
 
 .nav-list {
-    display: flex; /* Use flexbox for spacing items apart */
-    gap: 20px; /* Adjust gap between items */
+    display: flex;
+    gap: 20px; 
 }
 
 .nav-list .nav-item .nav-link-custom {
-    padding: 10px 15px; /* Adjusted padding for better spacing */
-    transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Transition properties */
-    font-weight: 700; /* Font weight adjustment */
-    border-radius: 5px; /* Added border radius */
-    position: relative; /* Ensure relative positioning for pseudo-element */
-    text-align: center; /* Center the text */
+    padding: 10px 15px; 
+    transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out; 
+    font-weight: 700; 
+    border-radius: 5px; 
+    position: relative; 
+    text-align: center; 
 }
 
 .nav-list .nav-item .nav-link-custom::after {
@@ -47,14 +47,14 @@ body {
     height: 2px;
     background: white;
     position: absolute;
-    bottom: -5px; /* Adjust the underline position */
+    bottom: -5px; 
     left: 50%;
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 .nav-list .nav-item .nav-link-custom:hover {
-    color: #8E46C6 !important; /* Changed text color to purple on hover */
-    background-color: white; /* Added white background on hover */
+    color: #8E46C6 !important; 
+    background-color: white; 
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .nav-list .nav-item:hover .nav-link-custom {
-    background-color: white; /* Added white background on hover */
-    color: #8E46C6 !important; /* Changed text color to purple on hover */
+    background-color: white; 
+    color: #8E46C6 !important; 
     text-decoration: none;
 }

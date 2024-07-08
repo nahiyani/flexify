@@ -1,12 +1,11 @@
-/* Header styles */
 .header {
     margin-bottom: 40px;
-    padding-top: 40px; /* Add padding on top */
-    text-align: center; /* Center header text */
+    padding-top: 40px;
+    text-align: center;
 }
 
 .header h1 {
-    font-size: 75px; /* Change font size */
+    font-size: 75px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -14,27 +13,25 @@
 .header p {
     font-size: 1rem;
     color: black;
-    max-width: 800px; /* Make the description wider */
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Search container styles */
 .purple-border {
-    border: 2px solid #8E46C6; /* Purple border */
-    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #8E46C6;
+    border-radius: 10px;
 }
 
 .purple-border .form-control {
-    border: none; /* Remove default border from the input field */
-    box-shadow: none; /* Remove default box shadow from the input field */
+    border: none;
+    box-shadow: none;
 }
 
 .purple-border .form-control:focus {
-    box-shadow: none; /* Remove focus box shadow from the input field */
+    box-shadow: none;
 }
 
-/* Search container and facets */
-.search{
+.search {
     display: flex;
     width: 95%;
     margin: 0 auto; 
@@ -45,8 +42,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 95%; /* Make search bar the size of the cards */
-    margin: 0 auto; /* Center the search bar and add bottom margin */
+    width: 95%;
+    margin: 0 auto;
 }
 
 .facets {
@@ -55,12 +52,12 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #8E46C6; /* Use hex code #8E46C6 */
-    margin-right: 20px; /* Add padding on the left of the faceted search filters */
+    border: 2px solid #8E46C6;
+    margin-right: 20px;
 }
 
 .facet-header {
-    background-color: #8E46C6; /* Use hex code #8E46C6 */
+    background-color: #8E46C6;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -77,43 +74,42 @@
 }
 
 .purple-button {
-    background-color: #8E46C6; /* Purple background */
-    color: white; /* White text */
-    width: 75%; /* 75% width of parent */
-    margin-top: 15px; /* Add space between facets */
-    margin: auto; /* Center horizontally */
-    display: block; /* Ensures block-level display */
-    border: none; /* Remove default border */
-    text-align: center; /* Center text horizontally */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #8E46C6;
+    color: white;
+    width: 75%;
+    margin-top: 15px;
+    margin: auto;
+    display: block;
+    border: none;
+    text-align: center;
+    cursor: pointer;
 }
 
 .purple-button:hover {
-    background-color: white; /* White background on hover */
-    color: #8E46C6; /* Purple text on hover */
-    border: 2px solid #8E46C6; /* Purple border on hover */
+    background-color: white;
+    color: #8E46C6;
+    border: 2px solid #8E46C6;
 }
 
 .results {
     width: 80%;
-    margin-left: 20px; /* Add padding on the right of the class cards */
-  
+    margin-left: 20px;
 }
 
 .results-count {
-    color: #8E46C6; /* Make text purple */
-    font-weight: bold; /* Make text bold */
-    text-align: center; /* Center the results and pagination */
-    margin: auto; /* Center horizontally */
-    display: flex; /* Flexbox for centering */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    border: none; /* Remove default border */
+    color: #8E46C6;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
 
 .class-card {
     margin-bottom: 20px;
-    border: 2px solid #8E46C6; /* Use hex code #8E46C6 */
+    border: 2px solid #8E46C6;
     border-radius: 15px;
 }
 
@@ -126,29 +122,31 @@
     flex: 1;
 }
 
-/* Button container and pagination */
-.button-container {
-    text-align: center;
+.reserve-button {
+    background-color: #8E46C6 !important;
+    color: white !important;
+    width: 150px;
+    border-radius: 15px !important;
+    text-decoration: none;
 }
 
 .pagination {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 30px; /* Adjust bottom margin if needed */
+    margin-bottom: 30px;
 }
 
 .pagination .page-link {
-    color: #8E46C6; /* Use hex code #8E46C6 */
-    border-color: #8E46C6; /* Use hex code #8E46C6 */
+    color: #8E46C6;
+    border-color: #8E46C6;
 }
 
 .pagination .page-item.active .page-link {
-    background-color: #8E46C6; /* Use hex code #8E46C6 */
-    border-color: #8E46C6; /* Use hex code #8E46C6 */
+    background-color: #8E46C6;
+    border-color: #8E46C6;
 }
 
-/* Additional styles */
 .bi-search {
     font-size: 1.2rem;
 }
@@ -158,18 +156,17 @@
 }
 
 .purple-checkbox .form-check-input:checked {
-    background-color: #8E46C6; /* Use hex code #8E46C6 */
-    border-color: #8E46C6; /* Use hex code #8E46C6 */
+    background-color: #8E46C6;
+    border-color: #8E46C6;
 }
 
-/* Checkbox description text */
 .facets .form-check-label {
-    color: #8E46C6; /* Make text purple */
+    color: #8E46C6;
 }
 
 .instructor-selector {
     background-color: white;
-    color: #8E46C6; /* Use hex code #8E46C6 */
-    border-color: #8E46C6; /* Use hex code #8E46C6 */
+    color: #8E46C6;
+    border-color: #8E46C6;
     margin-bottom: 10px;
 }

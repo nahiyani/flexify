@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Card, Pagination, InputGroup, FormControl, Dropdown, Button } from 'react-bootstrap';
 import Header from '../components/Header';
@@ -91,21 +92,24 @@ const Classes = () => {
   const handleFilterButtonClick = () => {
     const filtered = filterClasses();
     setFilteredClasses(filtered);
-    setCurrentPage(1); // Reset to the first page after filtering
+    setCurrentPage(1); 
   };
 
   useEffect(() => {
     setFilteredClasses(filterClasses());
-    setCurrentPage(1); // Reset to the first page after filtering
+    setCurrentPage(1); 
   }, [searchTerm, selectedInstructor, selectedClassTypes, selectedDifficulties, selectedDurations, selectedEquipment, selectedFormats, selectedRatings, allClasses]);
 
-  // Pagination logic
   const indexOfLastClass = currentPage * classesPerPage;
   const indexOfFirstClass = indexOfLastClass - classesPerPage;
   const currentClasses = filteredClasses.slice(indexOfFirstClass, indexOfLastClass);
   const totalPages = Math.ceil(filteredClasses.length / classesPerPage);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  const handleReserveClick = () => {
+    console.log("Reserve button clicked!");
+  };
 
   return (
     <div className="app">
@@ -254,10 +258,15 @@ const Classes = () => {
                   <strong>Rating:</strong> {cls.rating}<br />
                 </Card.Text>
                 <Card.Text>{cls.description}</Card.Text>
+                <Button className="purple-button" onClick={handleReserveClick}>
+                  <Link to="/reserve" className="nav-link-custom">
+                    RESERVE
+                  </Link>
+                </Button>
               </Card.Body>
             </Card>
           ))}
-        </div>      
+        </div> 
       </div>
       <div className="results-count">
           {filteredClasses.length > 0

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Form, Button, Row, Col } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col, Modal } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import Header from '../components/Header';
@@ -10,14 +10,43 @@ const Reserve = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [startTime, setStartTime] = useState(new Date());
   const [expiryDate, setExpiryDate] = useState(new Date());
+  const [showSuccessModal, setShowSuccessModal] = useState(false); // State for success modal
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.stopPropagation();
+    } else {
+      // Handle successful form submission
+      setShowSuccessModal(true);
     }
   };
+
+  const closeModal = () => setShowSuccessModal(false);
+
+  const classNames = [
+    "Class Name 1",
+    "Class Name 2",
+    "Class Name 3",
+    "Class Name 4",
+    "Class Name 5",
+    "Class Name 6",
+    "Class Name 7",
+    "Class Name 8",
+    "Class Name 9",
+    "Class Name 10",
+    "Class Name 11",
+    "Class Name 12",
+    "Class Name 13",
+    "Class Name 14",
+    "Class Name 15",
+    "Class Name 16",
+    "Class Name 17",
+    "Class Name 18",
+    "Class Name 19",
+    "Class Name 20"
+  ];
 
   return (
     <div>
@@ -31,9 +60,11 @@ const Reserve = () => {
         <Form className="reserve-form" onSubmit={handleSubmit}>
           <Form.Group controlId="formSubject">
             <Form.Label className="form-title">Subject</Form.Label>
-            <Form.Control as="select" required>
+            <Form.Control as="select" required className="dropdown-with-arrow">
               <option>Select a class</option>
-              {/* Add more options as needed */}
+              {classNames.map((className, index) => (
+                <option key={index}>{className}</option>
+              ))}
             </Form.Control>
           </Form.Group>
           <Row>
@@ -121,6 +152,17 @@ const Reserve = () => {
           </div>
         </Form>
       </Container>
+      <Modal show={showSuccessModal} onHide={closeModal} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Reservation Successful!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Thank you for your reservation! A confirmation has been sent to your email address.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={closeModal}>Close</Button>
+        </Modal.Footer>
+      </Modal>
       <Footer />
     </div>
   );

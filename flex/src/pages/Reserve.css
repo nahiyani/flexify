@@ -21,7 +21,7 @@ body {
 }
 
 .description {
-    margin-bottom: 20px; /* Ensure space below the first input text */
+    margin-bottom: 20px; 
 }
 
 .reserve-form {
@@ -34,7 +34,7 @@ body {
 
 .form-title {
     font-weight: bold;
-    margin-bottom: 10px; /* Add spacing below the label */
+    margin-bottom: 10px; 
 }
 
 .confirm-button {
@@ -45,22 +45,22 @@ body {
     margin-top: 20px;
     background-color: #8E46C6;
     border-color: #8E46C6;
-    color: white; /* Ensure text is white by default */
+    color: white; 
 }
 
 .confirm-button:hover {
-    background-color: white; /* Darker shade of purple on hover */
+    background-color: white; 
     border: 1px solid #8E46C6;
-    color: #8E46C6; /* Ensure text remains purple on hover */
+    color: #8E46C6; 
 }
 
 .form-group-spacing {
-    margin-bottom: 30px; /* Add spacing underneath each field */
+    margin-bottom: 30px; 
 }
 
 .button-container {
     display: flex;
-    justify-content: center; /* Center the button within the form */
+    justify-content: center; 
     align-items: center;
 }
 
@@ -79,14 +79,13 @@ body {
     color: white;
 }
 
-/* Ensure the Date and Time input fields are formatted like other fields */
 .date-picker-container {
-    margin-bottom: 30px; /* Add spacing underneath each field */
+    margin-bottom: 30px; 
 }
 
 .date-picker-container .form-title {
     display: block;
-    margin-bottom: 10px; /* Add spacing below the label */
+    margin-bottom: 10px; 
 }
 
 .date-picker-container .form-control {
@@ -94,19 +93,18 @@ body {
 }
 
 .time-picker-container {
-    margin-bottom: 30px; /* Add spacing underneath each field */
+    margin-bottom: 30px; 
 }
 
 .time-picker-container .form-title {
     display: block;
-    margin-bottom: 10px; /* Add spacing below the label */
+    margin-bottom: 10px; 
 }
 
 .time-picker-container .form-control {
     width: 100%;
 }
 
-/* Expiry date and CVV input fields adjustments */
 .expiry-cvv-container {
     display: flex;
     justify-content: space-between;

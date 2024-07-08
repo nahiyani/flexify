@@ -32,8 +32,8 @@
 }
 .instructor-card .card-title {
     font-size: 20px;
-    margin-top: 10px; /* Adjust the margin-top to create a gap */
-    margin-bottom: 5px; /* Optional: Add margin-bottom for spacing */
+    margin-top: 10px; 
+    margin-bottom: 5px; 
 }
 .instructors-header h1 {
     font-size: 75px;
@@ -65,14 +65,14 @@
     text-align: center;
     border: 2px solid #8E46C6;
     border-radius: 15px;
-    padding-top: 15px; /* Add space at the top of the card */
+    padding-top: 15px; 
 }
 
 .instructor-picture {
     background-color: rgb(228, 228, 228);
     width: 90%;
     height: 200px;
-    margin: 0 auto 10px; /* Reduce space below the image placeholder */
+    margin: 0 auto 10px; 
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -92,18 +92,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0; /* Adjust padding to gather text closer */
+    padding: 10px 0; 
 }
 
 .instructor-card .card-title,
 .instructor-card .card-subtitle {
-    color: white; /* Ensure text is white */
-    margin: 0; /* Remove margin to gather text closer */
+    color: white; 
+    margin: 0; 
 }
 
 .instructor-card .card-title {
     font-size: 20px;
-    margin-top: 5px; /* Reduce space between the image placeholder and the name */
+    margin-top: 5px; 
 }
 
 .instructor-card .card-subtitle {
@@ -112,7 +112,7 @@
 }
 
 .pagination {
-    margin-top: 60px; /* Increase space between the pagination div and the instructors heading div */
+    margin-top: 60px;
 }
 
 .pagination .page-link {
