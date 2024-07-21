@@ -15,7 +15,7 @@
   "react-router-dom": "^6.24.1",
   "react-scripts": "5.0.0",
   "web-vitals": "^4.2.1",
-  "homepage": "https://nahiyani.github.io/flexify"
+  "homepage": "https://nahiyani.github.io/flexify/flex"
  },
  "scripts": {
   "start": "react-scripts start",
